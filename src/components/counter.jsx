@@ -1,4 +1,4 @@
-//handling events
+//binding event handlers
 import React, { Component } from 'react';
 
 class Counter extends Component {
@@ -6,9 +6,9 @@ class Counter extends Component {
         count: 0,
     };
 
-    handleIncrement() {
+    handleIncrement = () => {
         console.log('Increment CLicked!', this);
-    }
+    };
 
     render() {
         return (
