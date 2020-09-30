@@ -1,4 +1,4 @@
-//binding event handlers
+//updating the State
 import React, { Component } from 'react';
 
 class Counter extends Component {
@@ -7,7 +7,7 @@ class Counter extends Component {
     };
 
     handleIncrement = () => {
-        console.log('Increment CLicked!', this);
+        this.setState({ count: this.state.count + 1 });
     };
 
     render() {
