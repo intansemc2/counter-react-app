@@ -5,5 +5,5 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import App from './App';
 
-//stateless functional components
+//Destructuring Arguments
 ReactDOM.render(<App />, document.getElementById('root'));
