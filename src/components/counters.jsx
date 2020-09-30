@@ -1,4 +1,4 @@
-//raising and handling event
+//update the state after handle events
 import React, { Component } from 'react';
 import Counter from './counter';
 
@@ -12,15 +12,15 @@ class Counters extends Component {
         ],
     };
 
-    handleDelete = () => {
-        //
+    handleDelete = (counterId) => {
+        this.setState({ counters: this.state.counters.filter((counter) => counter.id !== counterId) });
     };
 
     render() {
         return (
             <div>
                 {this.state.counters.map((counter) => (
-                    <Counter key={counter.id} onDelete={this.handleDelete} id={counter.id} value={counter.value} />
+                    <Counter key={counter.id} onDelete={this.handleDelete} counter={counter} />
                 ))}
             </div>
         );
