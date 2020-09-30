@@ -1,4 +1,4 @@
-//updating the State
+//what happens when state changes
 import React, { Component } from 'react';
 
 class Counter extends Component {
