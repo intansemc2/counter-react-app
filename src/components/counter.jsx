@@ -1,4 +1,3 @@
-//passing event arguments
 import React, { Component } from 'react';
 
 class Counter extends Component {
@@ -13,12 +12,12 @@ class Counter extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <div>
                 <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
                 <button onClick={() => this.handleIncrement({ id: 1 })} className='btn btn-secondary btn-sm'>
                     Increment
                 </button>
-            </React.Fragment>
+            </div>
         );
     }
 
